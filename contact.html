@@ -1,71 +1,192 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contact</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="tex/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+  <title>Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    .auth-image {
+      float: left;
+      padding-top: 5px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+    }
+
+h3, .sidenav, h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+
+.social {
+    width: 62px;
+    height: 62px;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+
+.social:last-child {
+    margin-right: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*contact*/
+
+#contact-form ul {
+    margin-bottom: 20px;
+}
+
+#contact-form li {
+    margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+    display: block;
+    width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    height: 35px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type=submit] {
+    background: #4aaaa5;
+    border: 0 none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;
+      margin-top: 20px;
+      margin-bottom: 20px} 
+    }
+  </style>
 </head>
 <body>
-    <header id="masthead">
-    <div class="container">
-        <a href="index.html" id="logo">Sally Cardinale</a>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-    </div>
-    </header>
 
-    <div id="main-container" class="container">
-        <section class="main-section">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Sally Cardinale</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+
+      <div class="col-sm-3 sidenav">
+      </div>
+
+      <div class="col-sm-6 text-left"> 
             <h1>Contact</h1>
 
-           <form id="contact-form">
-               <ul>
-                   <li>
-                       <label for="name">Name</label>
-                       <input type="text" name="name" id="name"
-                       placeholder=""
-                       required="required">
-                   </li>
-
-                   <li>
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email"
+            <form id="contact-form">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name"
                         placeholder=""
                         required="required">
                     </li>
-
+ 
                     <li>
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message"
-                        placeholder=""
-                        required="required"></textarea>
-                    </li>
-               </ul>
-               <input type="submit" name="submit">
-           </form>
+                         <label for="email">Email</label>
+                         <input type="text" name="email" id="email"
+                         placeholder=""
+                         required="required">
+                     </li>
+ 
+                     <li>
+                         <label for="message">Message</label>
+                         <textarea id="message" name="message"
+                         placeholder=""
+                         required="required"></textarea>
+                     </li>
+                </ul>
+                <input type="submit" name="submit">
+            </form>
+      </div>
+    
+    <div class="col-sm-3 sidenav">
+        <div id="connect">
+            <h3>Connect with Me</h3>
 
-        </section>
-
-        <section class="sidebar">
-            <div id="connect">
-                <h2>Connect with Me</h2>
-                <img src="assets/images/GitHubLogo.png" class="social" alt="GitHub">
-                <img src="assets/images/LinkedIn_logo_initials.png" class="social" alt="LinkedIn">
-                <img src="assets/images/StackOverflowLogo.png" class="social" alt="StackOverflow">
-            </div>
-        </section>
+            <img src="assets/images/GitHubLogo.png" class="social" alt="GitHub">
+            <img src="assets/images/LinkedIn_logo_initials.png" class="social" alt="LinkedIn">
+            <img src="assets/images/StackOverflowLogo.png" class="social" alt="StackOverflow">
+        </div>
     </div>
 
-    <footer>
-        <div class="container">
-            &copy; Copyright 2019 Sally Cardinale
-        </div>
-    </footer>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Copyright &copy;</p>
+</footer>
+
 </body>
 </html>

@@ -1,67 +1,177 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
-    <link rel="stylesheet" type="tex/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <title>About Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    
+    .work {
+    width: 224px;
+    height: 150px;
+    overflow: auto;
+    position: relative;
+    float: left;
+    margin: 20px 20px 25px;
+    }
+
+    
+    
+    .work img {
+        width: 100%;
+        height: 205px;
+        border: 0 none;
+        opacity: .8; 
+    }
+
+    .work h3 {
+        border-bottom: 0;
+        background: #4aaaa5;
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        bottom: 20px;
+        padding: 15px;
+        width: 100%;
+        line-height: 30px;
+        margin-bottom: 0;
+        font-weight: 300;
+    }
+
+    h3, .sidenav, h2 {
+        border-bottom: 2px solid #eee;
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+        line-height: 22px;
+    }
+
+    .social {
+        width: 62px;
+        height: 62px;
+        margin-top: 8px;
+        margin-right: 5px;
+    }
+
+    .social:last-child {
+        margin-right: 0;
+    }
+
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;
+      margin-top: 20px;
+      margin-bottom: 20px} 
+    }
+  </style>
 </head>
+
 <body>
-    <header id="masthead">
-    <div class="container">
-        <a href="index.html" id="logo">Sally Cardinale</a>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-    </div>
-    </header>
-
-    <div id="main-container" class="container">
-
-        <section class="main-section">
-            <h1>Portfolio</h1>
-
-            <div class="work">
-                <img src="assets/images/FriendshipGoals2.jpeg" class="auth-image" alt="Family">
-                <h3>Family</h3>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="index.html">Sally Cardinale</a>
             </div>
-
-            <div class="work">
-                <img src="assets/images/RedlandsPlaceholder.jpg" class="auth-image" alt="Community">
-                <h3>Community</h3>
+                  
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                </ul>
             </div>
-
-            <div class="work">
-                <img src="assets/images/PlaceholderImage3.jpg" class="auth-image" alt="Zen">
-                <h3>Zen</h3>
-            </div>
-
-            <div class="work">
-                <img src="assets/images/placeholder-3.jpg" class="auth-image" alt="Beauty">
-                <h3>Beauty</h3>
-            </div>
-
-            <div class="work">
-                <img src="assets/images/PlaceholderImage5.jpg" class="auth-image" alt="Family">
-                <h3>Travel</h3>
-            </div>
-        </section>
-
-        <section class="sidebar">
-            <div id="connect">
-                <h2>Connect with Me</h2>
-                <img src="assets/images/GitHubLogo.png" class="social" alt="GitHub">
-                <img src="assets/images/LinkedIn_logo_initials.png" class="social" alt="LinkedIn">
-                <img src="assets/images/StackOverflowLogo.png" class="social" alt="StackOverflow">
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <div class="container">
-            &copy; Copyright 2019 Sally Cardinale
+                
         </div>
-    </footer>
+    </nav>
+                
+    <div class="container-fluid text-center">    
+        <div class="row content">
+              
+            <div class="col-sm-2 sidenav">
+            </div>
+              
+            <div class="col-sm-7 text-left"> 
+                <h1>Portfolio</h1>
+
+                <div class="work">
+                    <img src="assets/images/FriendshipGoals2.jpeg" class="auth-image" alt="Family">
+                    <h3>Family</h3>
+                </div>
+
+                <div class="work">
+                    <img src="assets/images/RedlandsPlaceholder.jpg" class="auth-image" alt="Community">
+                    <h3>Community</h3>
+                </div>
+
+                <div class="work">
+                    <img src="assets/images/PlaceholderImage3.jpg" class="auth-image" alt="Zen">
+                    <h3>Zen</h3>
+                </div>
+
+                <div class="work">
+                    <img src="assets/images/placeholder-3.jpg" class="auth-image" alt="Beauty">
+                    <h3>Beauty</h3>
+                </div>
+
+                <div class="work">
+                    <img src="assets/images/PlaceholderImage5.jpg" class="auth-image" alt="Family">
+                    <h3>Travel</h3>
+                </div>
+            </div>
+                  
+            <div class="col-sm-3 sidenav">
+                <div id="connect">
+                    <h3>Connect with Me</h3>
+              
+                    <img src="assets/images/GitHubLogo.png" class="social" alt="GitHub">
+                    <img src="assets/images/LinkedIn_logo_initials.png" class="social" alt="LinkedIn">
+                    <img src="assets/images/StackOverflowLogo.png" class="social" alt="StackOverflow">
+                </div>
+            </div>
+              
+        </div>
+     </div>
 </body>
+
+<footer class="container-fluid text-center">
+    <p>Copyright &copy;</p>
+</footer>
+
 </html>
